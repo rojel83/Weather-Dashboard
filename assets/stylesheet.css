@@ -1,0 +1,61 @@
+#form-container {
+    height: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 25px;
+    font-size: 16px;
+}
+
+.dashboard {
+    margin: 2%;
+    position: center;
+}
+
+#icon {
+    width: 6%;
+    height: auto;
+}
+
+#icon2 {
+    width: 50%;
+    height: auto;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+#weather-container {
+    background-color: rgba(255, 255, 255, 0.74);
+    height: 600x;
+    margin-top: 10px;
+    border-radius: 20px;
+    border: 2px solid black;
+    padding: 25px;
+    font-size: 16px;
+}
+
+.current-weather {
+    margin: 0px auto;
+    height: 200px;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 0px;
+    font-size: 16px;
+}
+
+.btn-outline-info {
+    color: black;
+    border-color: blue;
+    background-color: chartreuse;
+}
+
+.btn-info {
+    color: blue;
+    background-color: blue;
+}
+
+.fa-search {
+    font-size: 25px;
+}
