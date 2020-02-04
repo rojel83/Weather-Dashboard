@@ -59,3 +59,33 @@
 .fa-search {
     font-size: 25px;
 }
+
+.day {
+    color: #ffffff;
+    background: rgb(5, 20, 224);
+    margin: 0px auto;
+    margin-top: 20px;
+    height: 225px;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 15px;
+    font-size: 16px;
+}
+
+.day-label {
+    margin: 10px 0px 0px 15px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.card-body {
+    padding: .25rem;
+    max-width: max-content;
+}
+
+h5 {
+    position: relative;
+}
