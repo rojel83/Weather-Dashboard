@@ -101,9 +101,32 @@ function getWeather(city) {
     });
 
 
+    // UV API call 
 
+    function getUV(lat, lon) {
 
+        var latitude = lat;
+        var longitude = lon;
+        var uvQuery = "https://api.openweathermap.org/data/2.5/uvi?appid=" + key + "&lat=" + latitude + "&lon=" + longitude
 
+        $.ajax({
+            url: uvQuery,
+            method: "GET"
+        }).then(function(response) {
+            $("#uvIndex").text(response.value);
+            var uv = response.value;
+            if (uv < 3) {
+                $("#uvIndex").removeClass()
+                $("#uvIndex").addClass("badge badge-success")
+            } else if (uv < 7) {
+                $("#uvIndex").removeClass()
+                $("#uvIndex").addClass("badge badge-warning")
+            } else if (uv < 11) {
+                $("#uvIndex").removeClass()
+                $("#uvIndex").addClass("badge badge-danger")
+            }
+        });
+    }
 
 
     // saves recently searched cities that you can get back to.
