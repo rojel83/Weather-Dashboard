@@ -4,8 +4,9 @@ Weather Assignment
 
 ![Alt text](assets/images/weather-pics.PNG)
 
+Type the city of your preference and click the blue button and you will get the Weather results.
 
-Use the OpenWeather API to retrieve weather data for cities. The documentation includes a section called "How to start" that will provide basic setup and usage instructions.
+On this project we had to create a weather dashboar using the guide lines below. 
 
 
 Use AJAX to hook into the API to retrieve data in JSON format.
@@ -30,3 +31,13 @@ Include a 5-Day Forecast below the current weather conditions. Each day for the 
 * Humidity
 
 ![Alt text](assets/images/weather-pics2.PNG)
+
+Technologies used
+
+* HTML
+* CSS
+* JavaScript
+* API
+* Jquery
+* Bootstrap
+
