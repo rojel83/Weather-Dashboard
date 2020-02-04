@@ -15,10 +15,10 @@ $(".searches").on("click", "button", function() {
     getWeather(city);
 });
 
+//search button function
+
 
 $("#citySearch").on("click", function() {
-    //search button click event 
-
 
     var cityName = $("#input").val();
     $("#input").attr("placeholder", " Enter Another City")
@@ -30,7 +30,7 @@ $("#citySearch").on("click", function() {
 });
 
 
-// function that loads previously searched city
+// History search function
 
 function loadCityBtns() {
 
@@ -52,7 +52,7 @@ function loadCityBtns() {
 
 
 
-//function that gets weather data and displays in DOM.
+//gets weather data function
 
 function getWeather(city) {
 
@@ -106,10 +106,10 @@ function getWeather(city) {
 
 
 
-
+    // saves recently searched cities that you can get back to.
 
     function makeCityBtn(city) {
-        // creates the city buttons after a search
+
         var cityBtn = $("<button>").text(city);
         cityBtn.addClass("btn btn-outline-info btn-block");
         cityBtn.attr("cityData", city);
@@ -119,23 +119,24 @@ function getWeather(city) {
 }
 
 
-
+//saves to local storage
 
 function saveCityBtns(city) {
-    // saves searched city to local storage
+
     localStorage.setItem("searchList", JSON.stringify(searchArr));
 }
 
+// API call to get weather info fuction.
 
 function getForcast(city) {
-    //ajax call to API to get weather info and print into DOM
+
     var queryURL = "https://api.openweathermap.org/data/2.5/forecast/?q=" + city + ",us&units=imperial&APPID=" + key;
 
 
 
 
 
-    //Ajax call to get forecast
+    // Forecast call.
     $.ajax({
         url: queryURL,
         method: "GET"
