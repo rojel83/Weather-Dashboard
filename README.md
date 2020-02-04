@@ -2,7 +2,7 @@
 Weather Assignment
 
 
-![Alt text](assets\images\weather-pics.PNG)
+![Alt text](assets/images/weather-pics.PNG)
 
 
 Use the OpenWeather API to retrieve weather data for cities. The documentation includes a section called "How to start" that will provide basic setup and usage instructions.
@@ -29,4 +29,4 @@ Include a 5-Day Forecast below the current weather conditions. Each day for the 
 * Temperature
 * Humidity
 
-![Alt text](assets\images\weather-pics2.PNG)
+![Alt text](assets/images/weather-pics2.PNG)
