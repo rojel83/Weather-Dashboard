@@ -1,3 +1,7 @@
+body {
+    background-image: url(https://s3.amazonaws.com/files.technologyreview.com/p/pub/images/climacelltopper.jpg);
+}
+
 #form-container {
     height: auto;
     margin-top: 10px;
@@ -5,6 +9,8 @@
     border: 2px solid rgb(0, 0, 0);
     padding: 25px;
     font-size: 16px;
+    background-color: white;
+    opacity: 75%;
 }
 
 .dashboard {
@@ -27,7 +33,8 @@
 }
 
 #weather-container {
-    background-color: rgba(255, 255, 255, 0.74);
+    background-color: white;
+    opacity: 75%;
     height: 600x;
     margin-top: 10px;
     border-radius: 20px;
@@ -88,4 +95,8 @@ li {
 
 h5 {
     position: relative;
+}
+
+h6 {
+    text-align: center;
 }
